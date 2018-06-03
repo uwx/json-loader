@@ -1,9 +1,11 @@
-module.exports = function (source) {
+const yaml = require('js-yaml');
+
+module.exports = source => {
   if (this.cacheable) this.cacheable();
 
-  var value = typeof source === "string" ? JSON.parse(source) : source;
+  const value = JSON.stringify(yaml.safeLoad(source));
 
-  value = JSON.stringify(value)
+  value = value
     .replace(/\u2028/g, '\\u2028')
     .replace(/\u2029/g, '\\u2029');
 

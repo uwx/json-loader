@@ -1,3 +1,4 @@
+// from https://github.com/francois2metz/yaml-loader/tree/add_tests
 const assert = require('assert');
 const yamlLoader = require('../');
 

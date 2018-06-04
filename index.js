@@ -1,6 +1,6 @@
 const yaml = require('js-yaml');
 
-module.exports = function(source) {
+module.exports = function(source) { // don't make this an arrow function
   if (this.cacheable) this.cacheable();
   if (!source) return 'module.exports = {}';
 

@@ -1,6 +1,6 @@
 {
   "name": "tiny-yaml-loader",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "uwx",
   "description": "yaml to object for webpack",
   "license": "MIT",
